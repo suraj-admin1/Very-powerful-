@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Manage Users - SurajMod</title>
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<h1>Manage Users</h1>
+<button onclick="logout()">Logout</button>
+<table id="users-table" border="1">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Role</th>
+      <th>Expiry</th>
+      <th>Banned</th>
+      <th>Theme</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<h2>Add New User</h2>
+<input type="text" id="new-username" placeholder="Username">
+<input type="password" id="new-password" placeholder="Password">
+<input type="date" id="new-expiry">
+<select id="new-role">
+  <option value="user">User</option>
+  <option value="admin">Admin</option>
+</select>
+<select id="new-theme">
+  <option value="default">Default</option>
+  <option value="matrix">Matrix</option>
+</select>
+<button onclick="addUser()">Add User</button>
+
+<script src="../scripts/admin.js"></script>
+</body>
+</html>

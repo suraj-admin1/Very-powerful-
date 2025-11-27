@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SurajMod Admin Panel</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/themes.css">
+</head>
+<body>
+<div class="index-container">
+    <h1>Welcome to SurajMod Admin Panel</h1>
+    <p>Secure admin panel for managing users, themes, and access keys.</p>
+    <div class="buttons">
+        <button onclick="redirectLogin()">Login</button>
+        <button onclick="redirectDashboard()">Dashboard</button>
+    </div>
+</div>
+
+<script>
+// Check if user is already logged in
+const user = JSON.parse(sessionStorage.getItem("user"));
+
+function redirectLogin() {
+    window.location.href = "pages/login.html";
+}
+
+function redirectDashboard() {
+    if (!user) {
+        alert("You must log in first!");
+        window.location.href = "pages/login.html";
+    } else if (user.banned) {
+        window.location.href = "pages/banned.html";
+    } else {
+        window.location.href = "pages/dashboard.html";
+    }
+}
+
+// Optional: auto-redirect logged-in users
+if (user) {
+    redirectDashboard();
+}
+</script>
+</body>
+</html>

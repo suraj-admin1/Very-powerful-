@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "username": "surajmod",
+      "password": "3f79bb7b435b05321651daefd374cd21b4f5f0b2b3e1dcf2a9d06b1c34d05f0e",
+      "role": "admin",
+      "expiry": "2099-12-31",
+      "banned": false,
+      "theme": "default"
+    },
+    {
+      "username": "user123",
+      "password": "ef797c8118f02dfb649b5f0c4a38df6ff7c983a3e7f37ad815e4f3c2b4b1f9c8",
+      "role": "user",
+      "expiry": "2025-12-31",
+      "banned": false,
+      "theme": "matrix"
+    }
+  ]
+}

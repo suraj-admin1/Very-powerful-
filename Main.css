@@ -1,0 +1,6 @@
+body { font-family: Arial; padding: 20px; background: #f0f0f0; }
+.login-container { max-width: 400px; margin: auto; padding: 20px; background: #fff; border-radius: 5px; }
+input, select { display: block; margin: 10px 0; padding: 10px; width: 100%; }
+button { padding: 10px 20px; cursor: pointer; }
+table { width: 100%; margin-top: 20px; border-collapse: collapse; }
+th, td { padding: 10px; border: 1px solid #333; text-align: center; }

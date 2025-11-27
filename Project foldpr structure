@@ -1,0 +1,19 @@
+SurajMod/
+│
+├─ assets/
+│   └─ key.json           # Stores users, hashed passwords, expiry, ban status, theme
+│
+├─ pages/
+│   ├─ login.html         # Login page
+│   ├─ dashboard.html     # Admin panel
+│   └─ banned.html        # Banned user page
+│
+├─ scripts/
+│   └─ admin.js           # JS: login, themes, expiry check, ban system
+│
+├─ styles/
+│   ├─ main.css
+│   └─ themes.css
+│
+├─ README.md
+└─ .gitlab-ci.yml

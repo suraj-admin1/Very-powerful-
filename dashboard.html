@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - SurajMod</title>
+<link rel="stylesheet" href="../styles/main.css">
+<link rel="stylesheet" href="../styles/themes.css">
+</head>
+<body>
+<h1>Welcome, <span id="username"></span>!</h1>
+<button onclick="logout()">Logout</button>
+
+<script>
+const user = JSON.parse(sessionStorage.getItem("user"));
+if (!user) window.location.href = "login.html";
+
+document.getElementById("username").textContent = user.username;
+
+// Apply theme
+document.body.dataset.theme = user.theme;
+
+function logout() {
+    sessionStorage.removeItem("user");
+    window.location.href = "login.html";
+}
+</script>
+</body>
+</html>
